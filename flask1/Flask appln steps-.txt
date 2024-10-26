@@ -1,0 +1,33 @@
+Flask application key points and steps->
+1.create environment 
+conda create -p venv python==3.12.5 -y
+
+2.Activate Conda
+conda activate venv/
+
+3.create Requirements.txt file for requirements
+pip install -r requirements.txt
+
+4.start your code app.py
+
+from flask import Flask
+
+## create a simple flask app
+app=Flask(__name__)
+
+#__name__ is entry point
+if __name__=="__main__":
+    app.run(debug=True)
+    #by deafult url=localhost and port 5000
+
+5.Learn about routing
+
+6.Learn about variables and variable rules
+
+7.Html Page Rendering And Url Redirection
+libraries->
+from flask import render_template,request
+
+8.Flask API Creation
+from flask import jsonify
+used postman api to send data and jsonify library
